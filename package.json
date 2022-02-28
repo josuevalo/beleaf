@@ -9,7 +9,7 @@
   "scripts": {
     "docker:up": "docker-compose up -d",
     "db:exec": "docker exec -it beleaf_database_1 psql",
-    "start": "cd express-back-end && node server.js",
+    "start": "node express-back-end/server.js",
     "heroku-postbuild": "cd express-back-end && npm install && cd ../react-front-end && npm install && npm run build"
   },
   "dependencies": {
