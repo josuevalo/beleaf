@@ -7,6 +7,15 @@ const Express = require('express');
 const App = Express();
 const BodyParser = require('body-parser');
 const PORT = process.env.PORT || 8080;
+const path = require('path');
+
+
+if (process.env.NODE_ENV === "production") {
+   
+  App.use(Express.static(path.join(__dirname, 'react-front-end/build')));
+} else {
+  App.use(Express.static('public'));
+}
 
 // Express Configuration
 App.use(BodyParser.urlencoded({
@@ -41,6 +50,10 @@ App.use("/api/reminders", reminderRoutes);
 App.get('/api/data', (req, res) => res.json({
   message: "Seems to work!",
 }));
+
+App.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'react-front-end/build/html'));
+});
 
 App.listen(PORT, () => {
   // eslint-disable-next-line no-console

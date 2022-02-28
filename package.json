@@ -2,9 +2,15 @@
   "name": "beleaf",
   "version": "0.1.0",
   "description": "final project",
+  "engines": {
+    "node": "12.22.5",
+    "npm": "6.14.14"
+  },
   "scripts": {
     "docker:up": "docker-compose up -d",
-    "db:exec": "docker exec -it beleaf_database_1 psql"
+    "db:exec": "docker exec -it beleaf_database_1 psql",
+    "start": "cd express-back-end && node server.js",
+    "heroku-postbuild": "cd express-back-end && npm install && cd ../react-front-end && npm install && npm run build"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
