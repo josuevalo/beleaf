@@ -194,7 +194,7 @@ div.topic-ribbon {
   row-gap: 25px;
 }
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
   0% {
     opacity: 1;
   }
@@ -202,7 +202,7 @@ div.topic-ribbon {
   100% {
     opacity: 0;
   }
-}
+} */
 
 .fadeOut {
   animation-name: fadeOut;
