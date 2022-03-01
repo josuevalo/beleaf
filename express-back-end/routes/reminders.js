@@ -19,7 +19,6 @@ router.post("/", (req, res) => {
 });
 
 router.patch("/:id", (req, res) => {
-  console.log("REQQQQQYYY", req);
   editLastWatered({
     plant_id: req.params.id,
     last_watered: req.body.last_watered,

@@ -144,7 +144,6 @@ class App extends Component {
     axios
       .get('/api/users') // Just to test that DB layer works
       .then((response) => {
-        console.log('Users: ' + response.data.users);
         this.setState({
           users: response.data.users,
         });
@@ -153,7 +152,6 @@ class App extends Component {
 
   fetchPlants = () => {
     axios.get('/api/plants').then((response) => {
-      console.log('Plants: ' + response.data.plants);
       this.setState({
         plants: response.data.plants,
       });
@@ -162,7 +160,6 @@ class App extends Component {
 
   fetchReminders = () => {
     axios.get('/api/reminders').then((response) => {
-      console.log('Reminders: ', response.data);
       this.setState({
         reminders: response.data,
       });
@@ -171,7 +168,6 @@ class App extends Component {
 
   fetchPosts = () => {
     axios.get('/api/posts').then((response) => {
-      console.log('Posts: ' + response.data.posts);
       this.setState({
         posts: response.data.posts,
       });
@@ -180,7 +176,6 @@ class App extends Component {
 
   fetchComments = () => {
     axios.get('/api/comments').then((response) => {
-      console.log('Comments: ' + response.data.comments);
       this.setState({
         comments: response.data.comments,
       });
@@ -191,7 +186,6 @@ class App extends Component {
     axios
       .get('/api/species') // Just to test that DB layer works
       .then((response) => {
-        console.log('Species: ' + response.data.species);
         this.setState({
           species: response.data.species,
         });
@@ -201,8 +195,6 @@ class App extends Component {
   fetchWishlist = () => {
     axios
       .get('/api/wishlist') // Just to test that DB layer works
-      .then((response) => {
-        console.log('Wishlist: ' + response.data.wishlist);
         this.setState({
           wishlist: response.data.wishlist,
         });
@@ -247,7 +239,6 @@ class App extends Component {
                 />
               }
             />
-            {console.log('STATE POSTS', this.state.posts)}
             <Route
               path="/newsfeed"
               element={

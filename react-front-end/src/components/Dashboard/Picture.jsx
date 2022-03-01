@@ -18,9 +18,7 @@ function Picture({ id, url, key, nickname, setSelectedPlant, plant, reminder }) 
     type: "image",
     item: { id: id },
     collect: (monitor) => ({ isDragging: !!monitor.isDragging() }),
-    // isDragging: (monitor) => {
-    //   console.log(monitor.getItem());
-    // },
+
     options: { dropEffect: "move" }
   }));
 

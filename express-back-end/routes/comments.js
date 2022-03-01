@@ -24,7 +24,6 @@ router.get("/", (req, res) => {
 
 // POST to comments table
 router.post("/", (req, res) => {
-  console.log('Route for new comment');
 
   const comment = req.body;
   

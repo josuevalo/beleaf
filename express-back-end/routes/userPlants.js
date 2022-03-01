@@ -3,7 +3,6 @@ const router  = express.Router();
 const { insertUserPlant } = require('../db/user-plant-queries');
 
 router.post("/", (req, res) => {
-  console.log("insert user plant", insertUserPlant);
   insertUserPlant(req.body)
     .then((response) => {
       res.json(response);

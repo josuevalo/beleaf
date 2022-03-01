@@ -11,7 +11,6 @@ import { SingleRoom } from "./SingleRoom";
 
 export default function Rooms({ plants, userId, updateLocation, setSelectedPlant, reminders }) {
   const addImageToBoard = (plant_id, location) => {
-    console.log({ plant_id, location })
     updateLocation(plant_id, location);
   }
   const allPlants = getPlantsForUser(plants, userId);

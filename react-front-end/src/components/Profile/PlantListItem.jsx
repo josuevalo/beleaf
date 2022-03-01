@@ -82,7 +82,6 @@ export default function PlantListItem({ user_id, id, scientificName, commonName,
             basic
             onClick={() => {
               setSelectedPlant(plant);
-              console.log("clicked");
             }}
           >
             See Info

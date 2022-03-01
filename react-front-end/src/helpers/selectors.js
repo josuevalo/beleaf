@@ -37,7 +37,6 @@ export function getWishlistPlants(wishlist, user_id) {
       arr.push(item);
     }
   });
-  console.log('arr is', arr);
   return arr;
 }
 

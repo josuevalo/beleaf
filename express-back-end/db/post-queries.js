@@ -12,7 +12,6 @@ const getPosts = () => {
 
 const saveNewPost = (data) => {
   const { user_id, title, description, photo, topic } = data;
-  console.log("data??", data);
   return db.query(
     `
     INSERT INTO posts (user_id, title, description, photo, topic, created_at ) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;

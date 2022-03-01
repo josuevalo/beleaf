@@ -6,7 +6,6 @@ const pool = new Pool(dbParams);
 pool.connect((err,client) => {
   if (!err) {
     console.log('DB in db.index.js connected.\nClient => ', client.user);
-    console.log('DB =====> ', client.database);
   } else {
     console.log('Error: ', err);
   }
