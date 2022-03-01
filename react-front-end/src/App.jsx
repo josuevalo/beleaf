@@ -195,6 +195,8 @@ class App extends Component {
   fetchWishlist = () => {
     axios
       .get('/api/wishlist') // Just to test that DB layer works
+      .then((response) => {
+
         this.setState({
           wishlist: response.data.wishlist,
         });
