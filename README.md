@@ -8,7 +8,7 @@ Beleaf lets users track and show off their plant collection, get watering remind
 
 **Tech Stack: PostgreSQL, Docker, Express (back-end), Node, React (front-end), Semantic UI.**
 
-We are proud to present to you our app live if you'd like to check it out, please visit [beleaf](https://beleaf-project.herokuapp.com/)
+We are proud to present to you our app live! If you'd like to check it out, please visit [beleaf](https://beleaf-project.herokuapp.com/)
 
 Enjoy!
 
