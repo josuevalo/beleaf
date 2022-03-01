@@ -12,7 +12,7 @@ const path = require('path');
 
 if (process.env.NODE_ENV === "production") {
    
-  App.use(Express.static(path.join(__dirname + '/../react-front-end/build')));
+  App.use(Express.static(path.resolve(__dirname, '../react-front-end/build')));
 } else {
   App.use(Express.static('public'));
 }
@@ -52,7 +52,7 @@ App.get('/api/data', (req, res) => res.json({
 }));
 
 App.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../react-front-end/build/html'));
+  res.sendFile(path.resolve(__dirname, '../react-front-end/build', 'index.html'));
 });
 
 App.listen(PORT, () => {
