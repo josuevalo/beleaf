@@ -12,7 +12,7 @@ const path = require('path');
 
 if (process.env.NODE_ENV === "production") {
    
-  App.use(Express.static(path.join(__dirname, 'react-front-end/build')));
+  App.use(Express.static('/app/react-front-end/build'));
 } else {
   App.use(Express.static('public'));
 }
@@ -22,7 +22,7 @@ App.use(BodyParser.urlencoded({
   extended: false
 }));
 App.use(BodyParser.json());
-App.use(Express.static('public'));
+// App.use(Express.static('public'));
 
 // Separated Routes for each Resource
 // Note: Feel free to replace the example routes below with your own
@@ -52,7 +52,7 @@ App.get('/api/data', (req, res) => res.json({
 }));
 
 App.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'react-front-end/build/html'));
+  res.sendFile('/app/react-front-end/build/html');
 });
 
 App.listen(PORT, () => {
