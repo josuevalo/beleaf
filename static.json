@@ -1,5 +1,5 @@
 {
-  "root": "build/",
+  "root": "react-front-end/build/",
   "clean_urls": false,
   "routes": {
     "/**": "index.html"
