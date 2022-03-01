@@ -2,7 +2,7 @@
 
 ## Welcome to our final project, beleaf! 🪴
 
-This is a houseplant app created by [Josue Arevalo](https://github.com/josuevalo), [Julia Gatina](https://github.com/julia-gatina), and [Lucy Shen](https://github.com/lucyshen7) as a final project for Lighthouse Labs Web Development Bootcamp.  
+This is a desktop houseplant app created by [Josue Arevalo](https://github.com/josuevalo), [Julia Gatina](https://github.com/julia-gatina), and [Lucy Shen](https://github.com/lucyshen7) as a final project for Lighthouse Labs Web Development Bootcamp.  
 
 Beleaf lets users track and show off their plant collection, get watering reminders and care tips, share knowledge with other users and much more.
 
